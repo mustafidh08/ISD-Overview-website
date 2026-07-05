@@ -1,0 +1,39 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Islamic Smart Door device render</title>
+  <desc id="desc">A stylized product render with smart door panel, controller board, LCD, NFC, and cloud access lines.</desc>
+  <rect width="1200" height="900" rx="36" fill="#F8F6EF"/>
+  <path d="M160 72H1040C1088.6 72 1128 111.4 1128 160V740C1128 788.6 1088.6 828 1040 828H160C111.4 828 72 788.6 72 740V160C72 111.4 111.4 72 160 72Z" fill="#FFFDFA" stroke="#D6C67A" stroke-width="2"/>
+  <path d="M228 164H574C613.8 164 646 196.2 646 236V734H228V164Z" fill="#151A17"/>
+  <path d="M258 210H538C564.5 210 586 231.5 586 258V734H258V210Z" fill="#232C28"/>
+  <rect x="298" y="282" width="248" height="96" rx="14" fill="#8CCFB7"/>
+  <rect x="318" y="306" width="164" height="12" rx="6" fill="#103D34" opacity=".8"/>
+  <rect x="318" y="334" width="204" height="12" rx="6" fill="#103D34" opacity=".55"/>
+  <rect x="318" y="362" width="128" height="12" rx="6" fill="#103D34" opacity=".55"/>
+  <circle cx="424" cy="494" r="74" fill="#F2D36B"/>
+  <circle cx="424" cy="494" r="46" fill="#151A17"/>
+  <path d="M395 493C411 473 438 473 454 493M380 493C404 457 445 457 469 493M408 506C418 496 431 496 441 506" stroke="#F2D36B" stroke-width="10" stroke-linecap="round"/>
+  <rect x="330" y="624" width="188" height="42" rx="21" fill="#FFFDFA"/>
+  <rect x="332" y="164" width="104" height="570" fill="url(#door-highlight)" opacity=".28"/>
+  <rect x="718" y="220" width="246" height="300" rx="22" fill="#0F6F5B"/>
+  <rect x="748" y="258" width="186" height="92" rx="12" fill="#DDF4E9"/>
+  <rect x="770" y="284" width="104" height="10" rx="5" fill="#0F6F5B" opacity=".75"/>
+  <rect x="770" y="310" width="138" height="10" rx="5" fill="#0F6F5B" opacity=".45"/>
+  <rect x="758" y="388" width="60" height="60" rx="12" fill="#F2D36B"/>
+  <rect x="832" y="388" width="60" height="60" rx="12" fill="#F2D36B"/>
+  <rect x="906" y="388" width="28" height="60" rx="12" fill="#F2D36B"/>
+  <path d="M646 410C678 410 684 332 718 332" stroke="#D6C67A" stroke-width="6" stroke-linecap="round"/>
+  <path d="M646 534C682 534 685 438 718 438" stroke="#8CCFB7" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="1014" cy="256" r="42" fill="#151A17"/>
+  <path d="M992 262C1002 246 1027 246 1036 262" stroke="#F2D36B" stroke-width="8" stroke-linecap="round"/>
+  <path d="M1000 280H1030" stroke="#F2D36B" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="1008" cy="596" r="62" fill="#DDF4E9"/>
+  <path d="M982 596H1034M1008 570V622" stroke="#0F6F5B" stroke-width="9" stroke-linecap="round"/>
+  <path d="M880 520C880 570 940 584 970 588" stroke="#0F6F5B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M790 220C760 170 800 134 846 150C872 118 924 130 930 176C976 178 996 226 964 254" stroke="#8CCFB7" stroke-width="8" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="door-highlight" x1="332" y1="164" x2="474" y2="678" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,29 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Islamic Smart Door exhibition booth illustration</title>
+  <desc id="desc">A clean exhibition booth illustration with product demo table, poster wall, and visitor silhouettes.</desc>
+  <rect width="1200" height="780" rx="32" fill="#FBFAF4"/>
+  <rect x="92" y="84" width="1016" height="518" rx="28" fill="#FFFDFA" stroke="#D6C67A" stroke-width="2"/>
+  <rect x="158" y="150" width="360" height="306" rx="18" fill="#151A17"/>
+  <rect x="194" y="190" width="288" height="76" rx="12" fill="#DDF4E9"/>
+  <rect x="216" y="216" width="156" height="10" rx="5" fill="#0F6F5B"/>
+  <rect x="216" y="242" width="220" height="10" rx="5" fill="#0F6F5B" opacity=".45"/>
+  <rect x="618" y="144" width="360" height="306" rx="18" fill="#F4E8B2"/>
+  <circle cx="704" cy="230" r="42" fill="#0F6F5B"/>
+  <path d="M742 310H858" stroke="#151A17" stroke-width="18" stroke-linecap="round"/>
+  <path d="M678 310H716" stroke="#151A17" stroke-width="18" stroke-linecap="round"/>
+  <rect x="656" y="350" width="284" height="20" rx="10" fill="#151A17" opacity=".45"/>
+  <rect x="656" y="392" width="220" height="20" rx="10" fill="#151A17" opacity=".3"/>
+  <path d="M280 508H918C964.4 508 1002 545.6 1002 592V640H196V592C196 545.6 233.6 508 280 508Z" fill="#0F6F5B"/>
+  <rect x="320" y="474" width="150" height="190" rx="18" fill="#232C28"/>
+  <rect x="346" y="506" width="98" height="42" rx="8" fill="#8CCFB7"/>
+  <circle cx="395" cy="596" r="30" fill="#F2D36B"/>
+  <path d="M612 486H796C832.5 486 862 515.5 862 552V664H546V552C546 515.5 575.5 486 612 486Z" fill="#E7EFE8"/>
+  <rect x="590" y="524" width="226" height="24" rx="12" fill="#0F6F5B" opacity=".75"/>
+  <rect x="590" y="570" width="164" height="18" rx="9" fill="#151A17" opacity=".35"/>
+  <circle cx="166" cy="656" r="46" fill="#151A17"/>
+  <path d="M112 760C118 704 142 684 166 684C190 684 214 704 220 760" fill="#151A17"/>
+  <circle cx="996" cy="656" r="46" fill="#151A17"/>
+  <path d="M942 760C948 704 972 684 996 684C1020 684 1044 704 1050 760" fill="#151A17"/>
+  <circle cx="1054" cy="618" r="34" fill="#0F6F5B"/>
+  <path d="M1018 760C1022 698 1038 668 1054 668C1070 668 1086 698 1090 760" fill="#0F6F5B"/>
+</svg>
