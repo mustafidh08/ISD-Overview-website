@@ -79,7 +79,7 @@ export default async function Home({
     <main className="min-h-screen bg-[#fbfaf4] text-[#151a17]">
       <header className="sticky top-0 z-50 border-b border-[#d8cf9a]/60 bg-[#fbfaf4]/92 backdrop-blur-xl">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
-          <a href="#top" className="flex items-center gap-3" aria-label="Islamic Smart Door">
+          <a href="#top" className="flex items-center gap-3" aria-label="Islamic Smart Door (ISD)">
             <span className="flex size-9 items-center justify-center rounded-lg bg-[#151a17] text-sm font-bold text-[#f2d36b]">
               ISD
             </span>
@@ -118,8 +118,9 @@ export default async function Home({
                 className: "bg-[#0f6f5b] text-white hover:bg-[#0b5949]",
               })}
               href="#contact"
+              aria-label={content.contact.label}
             >
-              <Mail />
+              <Mail aria-hidden="true" />
               <span className="hidden sm:inline">{content.contact.label}</span>
             </a>
           </div>
@@ -325,6 +326,7 @@ export default async function Home({
                 className="aspect-[9/16] w-full"
                 src={contact.youtubeEmbed}
                 title={content.gallery.items[2].title}
+                loading="lazy"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerPolicy="strict-origin-when-cross-origin"
                 allowFullScreen

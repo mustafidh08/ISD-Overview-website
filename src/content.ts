@@ -5,7 +5,7 @@ export const contact = {
   linkedin: "https://www.linkedin.com/in/muhammad-azzam-mustafidh-42586a239/",
   github: "https://github.com/mustafidh",
   youtube: "https://youtube.com/shorts/VSzH_oqFBRk?feature=share",
-  youtubeEmbed: "https://www.youtube.com/embed/VSzH_oqFBRk",
+  youtubeEmbed: "https://www.youtube-nocookie.com/embed/VSzH_oqFBRk",
   siteUrl: "https://islamic-smart-door.vercel.app",
 };
 

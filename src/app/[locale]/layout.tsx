@@ -38,22 +38,22 @@ export async function generateMetadata({
     title: content.meta.title,
     description: content.meta.description,
     alternates: {
-      canonical: `/${locale}`,
+      canonical: `${contact.siteUrl}/${locale}`,
       languages: {
-        id: "/id",
-        en: "/en",
+        id: `${contact.siteUrl}/id`,
+        en: `${contact.siteUrl}/en`,
       },
     },
     openGraph: {
       title: content.meta.title,
       description: content.meta.description,
-      url: `/${locale}`,
+      url: `${contact.siteUrl}/${locale}`,
       siteName: "Islamic Smart Door",
       locale: locale === "id" ? "id_ID" : "en_US",
       type: "website",
       images: [
         {
-          url: `/${locale}/opengraph-image`,
+          url: `${contact.siteUrl}/${locale}/opengraph-image`,
           width: 1200,
           height: 630,
           alt: content.meta.ogAlt,
@@ -64,7 +64,7 @@ export async function generateMetadata({
       card: "summary_large_image",
       title: content.meta.title,
       description: content.meta.description,
-      images: [`/${locale}/opengraph-image`],
+      images: [`${contact.siteUrl}/${locale}/opengraph-image`],
     },
   };
 }
@@ -85,6 +85,23 @@ export default async function LocaleLayout({
   setRequestLocale(rawLocale);
 
   const messages = (await import(`../../messages/${rawLocale}.json`)).default;
+  const content = siteContent[rawLocale];
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Islamic Smart Door (ISD)",
+    "applicationCategory": "HardwareApplication",
+    "operatingSystem": "ESP32",
+    "description": content.meta.description,
+    "url": `${contact.siteUrl}/${rawLocale}`,
+    "author": {
+      "@type": "Person",
+      "name": "Muhammad Azzam Mustafidh",
+      "email": contact.email,
+      "sameAs": [contact.linkedin, contact.github],
+    },
+  };
 
   return (
     <html
@@ -92,6 +109,10 @@ export default async function LocaleLayout({
       className={`${geistSans.variable} ${geistMono.variable} min-h-full bg-background`}
     >
       <body className="min-h-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <NextIntlClientProvider locale={rawLocale} messages={messages}>
           <TooltipProvider>{children}</TooltipProvider>
         </NextIntlClientProvider>
