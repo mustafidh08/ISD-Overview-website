@@ -22,6 +22,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 
+import { ContactForm } from "@/components/contact-form";
 import { MotionSection } from "@/components/motion-section";
 import { Badge } from "@/components/ui/badge";
 import { Button, buttonVariants } from "@/components/ui/button";
@@ -32,10 +33,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
 import { Separator } from "@/components/ui/separator";
-import { Textarea } from "@/components/ui/textarea";
 import { contact, siteContent } from "@/content";
 import { isLocale, routing, type Locale } from "@/i18n/routing";
 import { cn } from "@/lib/utils";
@@ -73,7 +71,6 @@ export default async function Home({
 
   const content = siteContent[rawLocale];
   const otherLocale: Locale = rawLocale === "id" ? "en" : "id";
-  const mailto = `mailto:${contact.email}?subject=Islamic%20Smart%20Door%20Collaboration`;
 
   return (
     <main className="min-h-screen bg-[#fbfaf4] text-[#151a17]">
@@ -478,39 +475,11 @@ export default async function Home({
           </div>
           <Card className="rounded-lg border-[#ded7aa] bg-white shadow-sm">
             <CardContent className="pt-6">
-              <form action={mailto} method="post" encType="text/plain" className="grid gap-4">
-                <div className="grid gap-2">
-                  <Label htmlFor="name">{content.contact.name}</Label>
-                  <Input id="name" name="name" required className="h-11 rounded-lg" />
-                </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="email">{content.contact.email}</Label>
-                  <Input id="email" name="email" type="email" required className="h-11 rounded-lg" />
-                </div>
-                <div className="grid gap-2">
-                  <Label htmlFor="message">{content.contact.message}</Label>
-                  <Textarea id="message" name="message" required className="min-h-32 rounded-lg" />
-                </div>
-                <div className="flex flex-col gap-3 sm:flex-row">
-                  <Button type="submit" className="h-11 bg-[#0f6f5b] text-white hover:bg-[#0b5949]">
-                    <Mail />
-                    {content.contact.send}
-                  </Button>
-                  <a
-                    className={buttonVariants({
-                      variant: "outline",
-                      size: "lg",
-                      className: "h-11 border-[#d6c67a] bg-white text-[#151a17] hover:bg-[#fff8d6]",
-                    })}
-                    href={contact.linkedin}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <ExternalLink />
-                    {content.contact.linkedin}
-                  </a>
-                </div>
-              </form>
+              <ContactForm
+                recipientEmail={contact.email}
+                linkedinUrl={contact.linkedin}
+                labels={content.contact}
+              />
             </CardContent>
           </Card>
         </div>

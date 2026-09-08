@@ -6,7 +6,7 @@ export const contact = {
   github: "https://github.com/mustafidh",
   youtube: "https://youtube.com/shorts/VSzH_oqFBRk?feature=share",
   youtubeEmbed: "https://www.youtube-nocookie.com/embed/VSzH_oqFBRk",
-  siteUrl: "https://islamic-smart-door.vercel.app",
+  siteUrl: "https://isd-overview.vercel.app",
 };
 
 export const siteContent: Record<Locale, {
